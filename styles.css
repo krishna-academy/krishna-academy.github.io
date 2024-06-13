@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.blogs, .services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 1rem);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-content {
+    padding: 1rem;
+}
+.about {
+    background: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.about img {
+    width: 150px;
+    border-radius: 50%;
+}
+.about p {
+    max-width: 600px;
+    margin: 1rem auto;
+}

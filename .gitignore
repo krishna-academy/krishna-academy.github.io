@@ -1,0 +1,7 @@
+# Ignore the .DS_Store file
+.DS_Store
+
+# Add other files or directories to ignore here
+node_modules/
+dist/
+*.log
