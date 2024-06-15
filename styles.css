@@ -1,53 +1,110 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100%;
 }
-header {
-    background: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-}
-.blogs, .services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    flex: 1 1 calc(33.333% - 1rem);
+
+.main-container {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    height: 100%;
 }
+
+header {
+    background: linear-gradient(to right, #333, #555);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.left-section {
+    width: 20%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.left-section .profile-photo {
+    margin-top: 24px;
+    width: 100%; /* Ensures the image is responsive */
+    height: auto;
+    border-radius: 50% / 30%; /* Makes the image oval */
+    object-fit: cover; /* Ensures the image covers the container properly */
+}
+
+.left-section .personal-details {
+    text-align: left;
+}
+
+.left-section .social-links {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    gap: 24px; /* Space between the links */
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+
+
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
 .card img {
     width: 100%;
-    height: auto;
 }
-.card-content {
-    padding: 1rem;
+
+.card-content h2 {
+    margin-top: 0;
 }
-.about {
-    background: #f9f9f9;
-    padding: 2rem;
-    text-align: center;
-    margin-top: 2rem;
-}
+
 .about img {
-    width: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-}
-.about p {
-    max-width: 600px;
-    margin: 1rem auto;
+    display: block;
+    margin: 0 auto;
 }
