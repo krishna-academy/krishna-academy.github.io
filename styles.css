@@ -77,20 +77,84 @@ header nav ul li a {
     object-fit: contain;
 }
 
-
-
-
 .right-section {
-    flex: 1;
+    width:80%;
     padding: 20px;
     overflow-y: auto;
 }
 
+.top-banner {
+    background-size: cover;
+    height: 70vh; 
+}
+
+.cover-section {
+    background-image: url("tech_tree.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Adjust the height as needed */
+    display: flex;
+    color: white;
+    padding: 2rem;
+}
+
+.cover-section cover-content {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end; 
+}
+
+.cover-section pitch {
+    flex: 1;
+    max-width: 50%; /* Ensure they don't exceed 50% */
+    padding: 20px
+}
+
+.cover-section features {
+    margin-top: 4rem;
+
+}
+
+.cover-section h1 {
+    font-size: 3em; /* Adjust the size as needed */
+}
+
+.cover-section p {
+    font-size: 2em; /* Adjust the size as needed */
+
+}
+
+
+
+.blogs-section {
+
+}
+
+.stars-image {
+    background-image: url("catch-stars.webp");
+    background-size: cover;
+    background-position: center;
+    height: 60vh; 
+    display: flex;
+    color: white;
+    padding: 2rem;
+}
+
+.featured-blogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 .card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: white;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 1rem);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .card img {
