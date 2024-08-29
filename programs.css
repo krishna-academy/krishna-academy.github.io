@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ff66c4, #ffde59);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+header .logo {
+    width: 2.8rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Program Details Section */
+.program-details {
+    max-width: 800px;
+    margin: 3rem auto 9rem auto;
+    padding: 1rem 2rem 3.2rem 2rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.program-details h2 {
+    color: #ff66c4;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.program-details h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.program-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.program-details ul {
+    list-style-type: disc;
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+.program-details ul li {
+    margin-bottom: 0.5rem;
+}
+
+.enroll-btn {
+    display: inline-block;
+    background-color: #ff66c4;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

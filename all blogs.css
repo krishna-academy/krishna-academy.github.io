@@ -14,39 +14,36 @@ header {
     color: white;
     text-align: center;
     padding: 2rem;
-
-    .logo-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .logo {
-        height: 6rem;
-    }
-
-    h1 {
-        letter-spacing: 2rem;
-    }
-
-    nav ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    nav ul li {
-        display: inline;
-        margin: 0 1rem;
-    }
-
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-    }
-
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.logo {
+    height: 6rem;
+}
+
+header h1 {
+    letter-spacing: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
 
 .content-container {
     display: flex;
@@ -187,90 +184,6 @@ header {
     } 
 
 
-    .blogs-section {
-        margin-top: 2rem;
-        display:flex-column;
-
-        .featured-blogs {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .blogs-title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .blog-name{
-            line-height: 1.2; /* Adjusts the height of each line */
-            height: 2.4em; /* This limits the text to two lines (line-height * 2) */
-            text-overflow: ellipsis;
-            overflow: hidden; /* Hides the overflowed content */
-            padding: 0 1rem;
-            display: -webkit-box; 
-            -webkit-line-clamp: 2; /* Limits to 2 lines */
-            -webkit-box-orient: vertical;
-        }
-
-        .all-blogs-cta {
-            color: #009AF0;
-            font-weight: bold;
-            font-size: 1.6rem;
-            cursor: pointer; /* Change cursor to pointer on hover */
-            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
-            border: 0.15rem solid #009AF0; 
-            padding-left: 2rem;  
-            padding-right: 2rem;
-            border-radius: 8px; 
-        }
-
-        .all-blogs-cta:hover {
-            transform: scale(1.05); /* Slightly enlarge the container */
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-        }
-
-        .blogs-cta {
-            color: #009AF0;
-            font-weight: bold;
-        }
-
-
-        .card {
-            background: white;
-            border-radius: 0.8rem;
-            box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            flex: 1 1 calc(33.333% - 1rem);
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            aspect-ratio: 100/95; /* Set a fixed aspect ratio for the card */
-            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
-            cursor: pointer; /* Change cursor to pointer on hover */
-        }
-
-        .card:hover {
-            transform: scale(1.05); /* Slightly enlarge the container */
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-        }
-
-        .card img {
-            width: 100%;
-            height: 60%;
-            object-fit: cover; /* Ensures the image covers the area while preserving aspect ratio */
-            aspect-ratio: 100/95; /* Set a fixed aspect ratio for the card */
-
-        }
-
-        .card-content h2 {
-            margin-top: 0;
-        }
-    }
-
-
-
     .why-us-section {
         display:flex-column;
 
@@ -314,14 +227,6 @@ header {
         color:#ffffff;
         font-size: 2rem;  
         padding: 1.2rem; 
-        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
-        cursor: pointer; /* Change cursor to pointer on hover */
-    }
-
-        /* Hover effects */
-    .join-us-section:hover {
-        transform: scale(1.05); /* Slightly enlarge the container */
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
     }
 
 
@@ -342,9 +247,7 @@ header {
         }
 
         .tnc-text {
-            padding: 0.8rem;
             color : #ffffff;
-            cursor: pointer; /* Change cursor to pointer on hover */
         }
 
         .copyright {
@@ -369,29 +272,6 @@ header {
             font-size: 2rem;
         }
     }
-
-    .contact-container{
-
-        display: inline-flex; 
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-
-        .icon-size {
-            font-size: 2rem;
-        }
-
-        .icon-text {
-            margin-left: 0.8rem;
-            font-size: 2rem;
-        }
-
-    }
-
-    .contact-container:hover {
-        text-decoration: underline;
-    }
-
 
 
     .line-container {
@@ -425,4 +305,62 @@ h3 {
 h4 {
     font-size: 1 rem;
 }
+
+
+.blogs-section {
+    margin-top: 2rem;
+}
+
+
+.featured-blogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 1rem);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-content h2 {
+    margin-top: 0;
+}
+
+.ebook-section {
+    margin-top: 2rem;
+}
+
+.stars-image {
+    background-image: url("catch-stars.webp");
+    background-size: cover;
+    background-position: center;
+    height: 60vh; 
+    display: flex;
+    color: white;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.about img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
 
