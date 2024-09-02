@@ -311,6 +311,11 @@ header {
 
         .program-outline {
             border: 0.15rem solid #009AF0; 
+            background: linear-gradient(to right, #e0f2f1, #80cbc4);
+/*            background: linear-gradient(to right, #e1bee7, #ce93d8);*/
+/*            background: linear-gradient(to right, #ffd1dc, #ff8a80);*/
+/*            background: linear-gradient(to right, #e0f7fa, #80deea);*/
+/*            background: linear-gradient(to right, #ffe0b2, #ffab91);*/
             padding-left: 2rem;  
             padding-right: 2rem;
             border-radius: 8px; 
