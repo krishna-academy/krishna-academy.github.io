@@ -224,6 +224,7 @@ header {
 
     .profile-outline-section {
         border: 0.15rem solid #009AF0; 
+        background: linear-gradient(to right, #e0f2f1, #80cbc4);
         margin-top: 2rem;
         padding: 2rem;  
         display: flex;
@@ -518,6 +519,13 @@ header {
             .why-us{
                 font-size: 3.2rem;
                 padding: 1.6rem;
+            }
+        }
+
+
+        @media(max-width: 480px){
+            .why-us-text{
+                font-size: 1rem;
             }
         }
 
