@@ -2,30 +2,34 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    height: 100%;
 }
 
 .main-container {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+/*@media(max-width: 1024px) {
+    .main-container{
+        justify-content: center;
+    }
+}*/
+
 header {
-    background: linear-gradient(to right, #ff66c4, #ffde59);
+    background: linear-gradient(to right, #06515d, #02182f);
     color: white;
     text-align: center;
     padding: 2rem;
-
-    .logo-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
     .logo {
         height: 6rem;
     }
 
     h1 {
+        font-size: 3.2rem;
         letter-spacing: 2rem;
     }
 
@@ -42,6 +46,33 @@ header {
     nav ul li a {
         color: white;
         text-decoration: none;
+        line-height: 2rem; /* Adjust the value as needed */
+    }
+
+}
+
+
+@media(max-width: 768px) {
+
+    header {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+
+        h1 {
+            letter-spacing: 1.6rem;
+        }
+
+    }
+
+}
+
+
+@media(max-width: 480px) {
+
+    header h1 {
+        letter-spacing: 1rem;
+        font-size: 2.8rem ;
     }
 
 }
@@ -50,14 +81,13 @@ header {
 
 .content-container {
     display: flex;
-    flex: 1;
-    overflow: hidden;
+    direction: column;
 }
 
 .left-section {
     width: 20%;
     padding: 2rem;
-    background: linear-gradient(to right, #ff66c4, #ffde59);
+    background: linear-gradient(to right, #06515d, #06515d);
     text-align: center;
     overflow-y: auto;
 
@@ -76,6 +106,7 @@ header {
     .profile-name {
         margin-top: 1.6rem;
         font-size: 1.6rem;
+        font-weight: bold;
 
     }
 
@@ -95,6 +126,12 @@ header {
 
 }
 
+@media(max-width: 1024px){
+    .left-section{
+        display: none;
+    }
+}
+
 
 .right-section {
     width:80%;
@@ -104,7 +141,7 @@ header {
     flex-direction: column;
 
     .cover-section {
-        background-image: url("tech_tree.jpeg");
+        background-image: url("tech_tree.png");
         background-size: cover;
         background-position: center;
         display: flex-column;
@@ -126,12 +163,132 @@ header {
                 margin-bottom: 0;
             }
 
+             @media(max-width: 1024px){
+                .pitch-title{
+                    font-size: 2.8rem;
+                }
+            }
+
+            @media(max-width: 768px){
+                .pitch-title{
+                    font-size: 2rem;
+                }
+            }
+
+            @media(max-width: 480px){
+                .pitch-title{
+                    font-size: 2rem;
+                }
+            }
+
             .pitch-subtitle {
                 font-size: 1.6rem;
                 margin-top: 0.5rem;
             }
+
+
+            @media(max-width: 768px){
+                .pitch-subtitle{
+                    font-size: 1.4rem;
+                }
+            }
+
+            @media(max-width: 480px){
+                .pitch-subtitle{
+                    font-size: 1rem;
+                }
+            }
+
         }
 
+    }
+
+    @media(max-width: 1024px){
+        .cover-section{
+            padding: 3rem;
+        }
+    }
+
+    @media(max-width: 768px){
+        .cover-section{
+            margin-top: 2rem;
+            padding: 2rem;
+        }
+    }
+
+    @media(max-width: 480px){
+        .cover-section{
+            padding: 1rem;
+        }
+    }
+
+    .profile-outline-section {
+        border: 0.15rem solid #009AF0; 
+        margin-top: 2rem;
+        padding: 2rem;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px; 
+        display: none;
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+        cursor: pointer; /* Change cursor to pointer on hover */
+
+        .section-left{
+            width: 25%;
+            display: flex-column;
+            justify-content: center;
+            align-items: center;
+
+            .profile-photo-mobile {
+                height: 12rem;
+                border-radius: 50% / 30%; /* Makes the image oval */
+                object-fit: cover; /* Ensures the image covers the container properly */
+            }
+
+            .personal-details {
+                text-align: left;
+            }
+
+            .profile-name {
+                margin-top: 1.2rem;
+                font-size: 1.6rem;
+                font-weight: bold;
+
+            }
+
+            .social-links {
+                margin-top: 1.6rem;
+                display: flex;
+                justify-content: center; /* Center the links horizontally */
+                gap: 3.6rem; /* Space between the links */
+                flex-wrap: wrap;
+            }
+
+            .social-icon {
+                width: 3.2rem;
+                height: 3.2rem;
+                object-fit: contain;
+            }
+        }
+
+        .personal-details {
+            margin-left: 1.6rem;
+        }
+    }
+
+
+
+    @media(max-width: 1024px){
+        .profile-outline-section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1.2rem;
+            margin-top: 2rem;
+            margin-right: 1.2rem;
+            padding: 1.2rem;  
+        }
     }
 
 
@@ -143,6 +300,13 @@ header {
             padding: 2rem;
             font-size: 4rem;
             color: #00A75D ;
+        }
+
+        @media(max-width: 768px){
+            .our-programs{
+                font-size: 3.2rem;
+                padding: 1.6rem;
+            }
         }
 
         .program-outline {
@@ -178,6 +342,22 @@ header {
             font-size: 1.2rem;
         }
 
+
+        @media(max-width: 480px){
+            .program-name{
+                font-size: 2rem;
+            }
+
+            .program-title {
+                font-size: 1.2rem;
+            }
+
+            .program-description {
+                font-size: 1rem;
+            }
+        }
+
+
         .program-cta {
             color: #009AF0;
             font-weight: bold;
@@ -185,6 +365,12 @@ header {
 
 
     } 
+
+    @media(max-width: 768px){
+        .programs-section{
+            padding: 1.2rem;
+        }
+    }
 
 
     .blogs-section {
@@ -197,6 +383,13 @@ header {
             gap: 1rem;
         }
 
+        /* Media query for mobile devices */
+        @media (max-width: 1024px) {
+            .featured-blogs {
+                flex-direction: column; /* Stacks the cards vertically */
+            }
+        }
+
         .blogs-title {
             display: flex;
             justify-content: space-between;
@@ -204,17 +397,45 @@ header {
         }
 
         .blog-name{
-            line-height: 1.2; /* Adjusts the height of each line */
-            height: 2.4em; /* This limits the text to two lines (line-height * 2) */
+            line-height: 1.2rem; /* Adjusts the height of each line */
+            line-height: 2.4rem; /* This limits the text to two lines (line-height * 2) */
             text-overflow: ellipsis;
             overflow: hidden; /* Hides the overflowed content */
             padding: 0 1rem;
+            font-size: 1.2rem;
             display: -webkit-box; 
             -webkit-line-clamp: 2; /* Limits to 2 lines */
             -webkit-box-orient: vertical;
         }
 
+        @media(max-width: 1024px) {
+            .blog-name {
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                text-overflow: ellipsis;
+                overflow: hidden; /* Hides the overflowed content */
+                display: -webkit-box; 
+                -webkit-line-clamp: 1; /* Limits to 2 lines */
+                -webkit-box-orient: vertical;
+            }
+        }
+
+        @media(max-width: 480px) {
+            .blog-name {
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                text-overflow: ellipsis;
+                overflow: hidden; /* Hides the overflowed content */
+                display: -webkit-box; 
+                -webkit-line-clamp: 2; /* Limits to 2 lines */
+                -webkit-box-orient: vertical;
+            }
+        }
+
+
+
         .all-blogs-cta {
+            display: none;
             color: #009AF0;
             font-weight: bold;
             font-size: 1.6rem;
@@ -232,6 +453,7 @@ header {
         }
 
         .blogs-cta {
+            line-height: 1.2rem;
             color: #009AF0;
             font-weight: bold;
         }
@@ -240,13 +462,13 @@ header {
         .card {
             background: white;
             border-radius: 0.8rem;
+            margin-bottom: 1rem;
             box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
             overflow: hidden;
             flex: 1 1 calc(33.333% - 1rem);
             display: flex;
             flex-direction: column;
             text-align: center;
-            aspect-ratio: 100/95; /* Set a fixed aspect ratio for the card */
             transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
             cursor: pointer; /* Change cursor to pointer on hover */
         }
@@ -259,17 +481,18 @@ header {
         .card img {
             width: 100%;
             height: 60%;
+            max-height: 20rem;
             object-fit: cover; /* Ensures the image covers the area while preserving aspect ratio */
-            aspect-ratio: 100/95; /* Set a fixed aspect ratio for the card */
 
         }
 
-        .card-content h2 {
-            margin-top: 0;
-        }
     }
 
-
+    @media(max-width: 768px){
+        .blogs-section{
+            padding: 1.2rem;
+        }
+    }
 
     .why-us-section {
         display:flex-column;
@@ -286,8 +509,21 @@ header {
             padding-bottom: 1.2rem;
         }
 
+        @media(max-width: 768px){
+            .why-us{
+                font-size: 3.2rem;
+                padding: 1.6rem;
+            }
+        }
+
+
     }
 
+    @media(max-width: 768px){
+        .why-us-section{
+            padding: 1.2rem;
+        }
+    }
 
     .contact-section {
         display:flex-column;
@@ -298,12 +534,85 @@ header {
             color: #00A75D ;
         }
 
+        @media(max-width: 768px){
+            .contact_us{
+                font-size: 3.2rem;
+                padding: 1.6rem;
+            }
+        }
+
         .content-contact-us{
             display: flex;
             justify-content: space-around;
         }
+
+        @media(max-width: 1024px) {
+
+            .content-contact-us {
+                flex-direction: column; /* Stacks the cards vertically */
+            }
+        }
+
+
+            .contact-container{
+
+        display: inline-flex; 
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .icon-size {
+            font-size: 2rem;
+        }
+
+        @media(max-width: 1024px) {
+
+            .icon-size {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media(max-width: 768px) {
+
+            .icon-size {
+                font-size: 1.4rem;
+            }
+        }
+
+
+        .icon-text {
+            color: #000000;
+            margin-left: 0.8rem;
+            font-size: 1.6rem;
+        }
+
+        @media(max-width: 768px) {
+
+            .icon-text {
+                font-size: 1.2rem;
+            }
+        }
+
+
+        @media(max-width: 480px) {
+
+            .icon-text {
+                font-size: 1rem;
+            }
+        }
+
+
     }
 
+
+
+    .contact-container:hover {
+        text-decoration: underline;
+    }
+
+
+
+    }
 
     .join-us-section{
         display: flex;
@@ -361,37 +670,14 @@ header {
             align-items: center;
 
         .icon-size {
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
 
         .icon-text {
             margin-left: 0.8rem;
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
     }
-
-    .contact-container{
-
-        display: inline-flex; 
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-
-        .icon-size {
-            font-size: 2rem;
-        }
-
-        .icon-text {
-            margin-left: 0.8rem;
-            font-size: 2rem;
-        }
-
-    }
-
-    .contact-container:hover {
-        text-decoration: underline;
-    }
-
 
 
     .line-container {
@@ -408,6 +694,22 @@ header {
 
 
 }
+
+
+@media(max-width: 1024px){
+    .right-section{
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px){
+    .right-section{
+        width: 100%;
+        padding: 0rem;
+    }
+}
+
+
 
 
 h1 {

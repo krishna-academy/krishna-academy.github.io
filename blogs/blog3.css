@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #0056b3;
+}
+
+article section {
+    margin-bottom: 2rem;
+}
+
+article section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 0;
+}
+
+article section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+article section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+article section img[alt="Light bulb representing an idea"] {
+    border: 2px solid #ffcc00;
+}
+
+article section img[alt="Entrepreneurs in a brainstorming session"] {
+    border: 2px solid #00cc66;
+}
+
+article section img[alt="Person sketching a business plan on a whiteboard"] {
+    border: 2px solid #0066cc;
+}
+
+article section img[alt="Diverse group of entrepreneurs collaborating"] {
+    border: 2px solid #cc0066;
+}
+
+article section img[alt="Product prototype on a workbench"] {
+    border: 2px solid #cc6600;
+}
+
+article section img[alt="Product launch event"] {
+    border: 2px solid #cc0066;
+}
+
+article section img[alt="Business growth chart"] {
+    border: 2px solid #00cccc;
+}
+
+article section img[alt="Mentorship session at Krishna Academy"] {
+    border: 2px solid #6600cc;
+}
+
+@media (max-width: 600px) {
+    .blog-container {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    article section h2 {
+        font-size: 1.2rem;
+    }
+
+    article section p {
+        font-size: 0.9rem;
+    }
+}
+
+.side-by-side {
+    display: flex;
+    justify-content: center;    
+}
+
+.medium-images {
+    width: 50%;
+}
+
+.business-growth {
+    padding-left: 1.6rem;
+}
+
+
+
+.contact-section {
+    display:flex-column;
+
+    .contact_us{
+        padding: 2rem;
+        font-size: 3.2rem;
+        color: #00A75D ;
+    }
+
+    @media(max-width: 768px){
+        .contact_us{
+            font-size: 3.2rem;
+            padding: 1.6rem;
+        }
+    }
+
+    .content-contact-us{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    @media(max-width: 1024px) {
+
+        .content-contact-us {
+            flex-direction: column; /* Stacks the cards vertically */
+        }
+    }
+
+
+    .contact-container{
+
+        display: inline-flex; 
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .icon-size {
+            font-size: 2rem;
+        }
+
+        @media(max-width: 1024px) {
+
+            .icon-size {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media(max-width: 768px) {
+
+            .icon-size {
+                font-size: 1.4rem;
+            }
+        }
+
+
+        .icon-text {
+            margin-left: 0.8rem;
+            font-size: 1.6rem;
+        }
+
+
+        @media(max-width: 1024px) {
+
+            .icon-text {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media(max-width: 768px) {
+
+            .icon-text {
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+
+
+
+    .contact-container:hover {
+        text-decoration: underline;
+    }
+
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .line {
+        flex-grow: 1;
+        height: 0.5rem;
+        background-color: #009AF0; 
+    }
+}
+
+
+.contact-text {
+    color: #000000;
+    margin-left: 0.8rem;
+    font-size: 1.6rem;
+}
+
+@media(max-width: 480px) {
+
+    .contact-text {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .contact-text {
+        font-size: 1.2rem;
+    }
+}

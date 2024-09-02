@@ -26,3 +26,7 @@ document.getElementById("blog2").onclick = function() {
 document.getElementById("blog3").onclick = function() {
     window.location.href = "blogs/blog3.html";
 };
+
+document.getElementById("all-blogs-cta").onclick = function() {
+    window.location.href = "all-blogs.html"
+}
