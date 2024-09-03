@@ -252,6 +252,7 @@ header {
             }
 
             .profile-name {
+                text-align: center;
                 margin-top: 1.2rem;
                 font-size: 0.8rem;
                 font-weight: bold;
