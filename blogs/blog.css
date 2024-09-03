@@ -15,6 +15,12 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+@media(max-width: 48rem){
+    .blog-container {
+        padding: 1.2rem;
+    }
+}
+
 header h1 {
     font-size: 2.5rem;
     color: #333;
